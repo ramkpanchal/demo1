@@ -1,7 +1,7 @@
 import re
-from django impor forms 
+from django import forms 
 from django.contrib.auth.models import User
-from django.utils.translation import ugettext_lazy as_
+from django.utils.translation import ugettext_lazy as
 
 class RegistrationForm(forms.Form):
 username = forms.RegexField(regex=r'^\w+$', widget=forms.TextInput(attrs=dict(required=true, max_length = 30)), lable= _("username"), error_messages ={'invalid'("please enter username.")} )
@@ -19,6 +19,6 @@ def clean_username(self):
 
 def clean(self): 
 	if 'password' in self.clean_data and 'password' in self.cleaned_data:
-if self.clean_data['password'] != self.cleaned_data['password2':
-	raise forms.ValidationError(_("the two password fields did not match"))]
-	return self/cleaned_data
+		if self.clean_data['password'] != self.cleaned_data['password2':
+		raise forms.ValidationError(_("the two password fields did not match"))]
+		return self.cleaned_data
