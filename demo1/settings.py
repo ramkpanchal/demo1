@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login',
+    'login'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'demo1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [('C:\\Python27\\Lib\\site-packages\\django\\contrib\admin\\templates\\admin')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -64,7 +64,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+
+             ],
         },
     },
 ]
