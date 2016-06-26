@@ -56,7 +56,7 @@ ROOT_URLCONF = 'demo1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [('C:\\Python27\\Lib\\site-packages\\django\\contrib\admin\\templates\\admin')],
+        'DIRS': [('C:\Python27\Lib\site-packages\django\contribadmin\templates\admin')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
